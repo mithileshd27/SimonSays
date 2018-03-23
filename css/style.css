@@ -1,0 +1,211 @@
+body{
+  background-image: url(https://image.ibb.co/f5SKtH/skulls.png);
+  font-family: 'Berkshire Swash', cursive;
+}
+.container-fluid{
+  padding: 0px;
+}
+.game{
+  position: relative;
+  top: 10vh;
+  height: 80vh;
+  width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: drop-shadow(-10px 8px 30px #424242) !important;
+}
+.topL{
+  background-color: #F44336;
+  border-top-left-radius: 100%;
+  border-width: 20px 10px 10px 20px;
+  border-color: #37474F;
+}
+.topL:active{
+  background-color: #B71C1C;
+}
+.topL.dark{
+  background-color: #B71C1C;
+}
+.topR{
+  background-color: #4CAF50;
+  border-top-right-radius: 100%;
+  border-width: 20px 20px 10px 10px;
+  border-color: #37474F;
+}
+.topR:active{
+  background-color: #1B5E20;
+}
+.topR.dark{
+  background-color: #1B5E20;
+}
+.bottomL{
+  background-color: #00BCD4;
+  border-bottom-left-radius: 100%;
+  border-width: 10px 10px 20px 20px;
+  border-color: #37474F;
+}
+.bottomL:active{
+  background-color: #006064;
+}
+.bottomL.dark{
+  background-color: #006064;
+}
+.bottomR{
+  background-color: #FFC107;
+  border-bottom-right-radius: 100%;
+  border-width: 10px 20px 20px 10px;
+  border-color: #37474F;
+}
+.bottomR:active{
+  background-color: #FF6F00;
+}
+.bottomR.dark{
+  background-color: #FF6F00;
+}
+.btns{
+  height: 40vh;
+  width: 40vh;
+  float: left;
+  border-style: solid;
+}
+.control{
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100%;
+  border: 20px solid #37474F;
+  top: 20vh;
+  left: 20vh;
+  position: absolute;
+  z-index = 10;
+  background-color: #CFD8DC;
+}
+h2{
+  padding-top: 20px;
+}
+h3{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 5px solid #37474F;
+  border-radius: 5px;
+  box-shadow: 0 6px 6px #999;
+}
+.onoff{
+  margin-top: 20px;
+}
+.ctrlbtns{
+  float: left;
+  width: 50%;
+}
+.abc{
+  border: 1px solid #37474F;
+  border-radius: 50%;
+  height: 20px !important;
+  width: 20px !important;
+  box-shadow: 0 6px #999;
+}
+.btn:active{
+  box-shadow: 0 3px #999;
+}
+.counter{
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+}
+#beingcounted{
+  border: 5px solid #37474F;
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  background-color: #CFD8DC;
+  margin: 0px;
+}
+#header{
+  position: absolute;
+  z-index: 2;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-shadow: 1px 1px 2px black;
+  height: 100vh;
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFF8E1;
+  -webkit-box-shadow: 10px 0 5px -2px #888;
+  box-shadow: 10px 0 5px -2px #888;
+}
+.instr{
+  position: absolute;
+  z-index: 2;
+  right: 0%;
+  top: 7%;
+}
+#instrbtn{
+  box-shadow: 0 6px #999;
+}
+#instrbtn:active{
+  box-shadow: 0 3px #999;
+}
+.noClick{
+  pointer-events: none;
+}
+.yesClick{
+  pointer-events: auto;
+  cursor: pointer;
+}
+.highlight{
+  border: 5px solid #64DD17;
+}
+.gameWin{
+  width: 30vw;
+  position: absolute;
+  z-index: 9;
+  opacity: 1;
+  background-color: #FFF8E1;
+  border: 3px solid black;
+  border-radius: 5px;
+  left: 6vw;
+  top: 41%;
+  -webkit-filter: drop-shadow(0px 20px 10px #212121) !important;
+}
+.winAlert{
+  padding: 10px;
+  margin: 0px;
+}
+#afterWin{
+  margin-bottom: 10px;
+  box-shadow: 0 6px #999;
+}
+#afterWin:active{
+  box-shadow: 0 3px #999;
+}
+#instructions{
+  position: absolute;
+  z-index: 10;
+  background-color: #FFF8E1;
+  width: 100%;
+  top: 25%;
+}
+#inst{
+  margin: 0px;
+}
+.btn-sm{
+  position: absolute;
+  z-index: 2;
+  right:5%;
+}
+#resetIcon{
+  border-radius: 50%;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+#start{
+  margin-bottom: 0px !important;
+}
+#strict{
+  margin-bottom: 0px !important;
+}
+#welcome{
+  padding: 0px;
+}

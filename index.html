@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SimonSays</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Berkshire+Swash'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <audio id="red">
+  <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<audio id="green">
+  <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<audio id="yellow">
+  <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<audio id="blue">
+  <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<audio id="warning">
+  <source src="https://rawgit.com/mithileshd27/myCDN/master/warning.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<audio id="win">
+  <source src="https://rawgit.com/mithileshd27/myCDN/master/win.mp3" type="audio/mpeg">
+  Your browser doesn't support audio element.
+</audio>
+<div class="container-fluid">
+  <h1 class="text text-center" id="header">Simon<span>®</span> Says</h1>
+  <div class="game">
+    <div>
+      <div class="btns topL noClick" id="1">
+      </div>
+      <div class="btns topR noClick" id="2">
+      </div>
+    </div>
+    <div>
+      <div class="btns bottomL noClick" id="3">
+      </div>
+      <div class="btns bottomR noClick" id="4">
+      </div>
+    </div>
+    <div class="control text text-center">
+      <h2 id="welcome">Let's Play</h2>
+      <div class="onoff text text-center">
+        <div class="ctrlbtns">
+          <button type="button" class="btn btn-danger abc" id="startbtn"></button>
+          <h3 id="start">Start</h3>
+        </div>
+        <div class="ctrlbtns">
+          <button type="button" class="btn btn-warning abc" id="strictbtn"></button>
+          <h3 id="strict">Strict</h3>
+        </div>
+      </div>
+      <button class="btn btn-warning reset" id="resetIcon">
+        <span class="glyphicon glyphicon-repeat"></span>
+      </button>
+    </div>
+    <div class="gameWin text text-center">
+      <h2 class="text text-center winAlert">!! You've won the game !!</h2>
+      <button type="button" class="btn btn-primary reset btn-md" id="afterWin">Reset</button>
+    </div>
+    <div class="counter">
+      <h4 class="text text-center">Count</h4>
+      <h1 id="beingcounted">--</h1>
+    </div>
+    <div class="instr">
+      <button class="btn btn-info btn-lg" id="instrbtn">
+        <span class="glyphicon glyphicon-info-sign"></span>
+      </button>
+    </div>
+    <div class="well" id="instructions">
+      <button class="btn btn-danger btn-sm">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+      <h1 class="text text-center">Instructions</h1>
+      <ol>
+        <li>This is a web version of the game Simon<span>®</span> Says.</li>
+        <li>You have 4 different coloured buttons.</li>
+        <li>The computer will click a sequence of buttons after you press the start button.</li>
+        <li>To play, you have to click the same sequence of buttons correctly.</li>
+        <li>If you play a wrong sequence, you will have to play again.</li>
+        <li>If strict mode is enabled, the counter will reset if you play a wrong sequence.</li>
+        <li>After the count reaches 20, you win the game.</li>
+        <li>Good Luck !!</li>
+      </ol>
+    </div>
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
